@@ -35,7 +35,6 @@ jelajah-chatbot/
 │   ├── script.js     ← Logika frontend + fetch ke API
 │   └── style.css     ← Styling antarmuka
 ├── .env              ← API Key (tidak di-push ke GitHub)
-├── .env.example      ← Template konfigurasi
 ├── .gitignore
 ├── index.js          ← Backend Node.js + Express + Gemini
 ├── package.json
