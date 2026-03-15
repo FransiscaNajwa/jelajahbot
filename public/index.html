@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JelajahBot — Asisten Wisata Indonesia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app-wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-avatar">🧭</div>
+      <div class="header-info">
+        <div class="header-name">JelajahBot</div>
+        <div class="header-sub">Asisten Wisata Indonesia</div>
+      </div>
+      <div class="header-status">
+        <span class="status-dot"></span> Online
+      </div>
+    </div>
+
+    <!-- Topic Chips -->
+    <div class="chips" id="chips">
+      <button class="chip" onclick="sendChip('Rekomendasikan wisata alam di Indonesia yang lagi hits!')">🌿 Wisata Alam</button>
+      <button class="chip" onclick="sendChip('Makanan khas apa yang wajib dicoba di Jawa Tengah?')">🍜 Kuliner</button>
+      <button class="chip" onclick="sendChip('Tips backpacker hemat ke Lombok untuk pemula')">🎒 Backpacker</button>
+      <button class="chip" onclick="sendChip('Hidden gem di Indonesia yang jarang diketahui turis')">💎 Hidden Gems</button>
+      <button class="chip" onclick="sendChip('Itinerary 3 hari 2 malam di Yogyakarta')">📅 Itinerary</button>
+    </div>
+
+    <!-- Chat Box -->
+    <div class="chat-box" id="chat-box">
+      <!-- Pesan awal dari bot -->
+      <div class="msg-row bot">
+        <div class="msg-avatar">🧭</div>
+        <div class="bubble bot">
+          Halo! Aku <strong>JelajahBot</strong> 👋<br>
+          Siap bantu kamu eksplorasi keindahan Indonesia! Mau tanya soal destinasi, kuliner, tips perjalanan, atau itinerary? Yuk, tanyain aja! 🗺️
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+      <form id="chat-form">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Tanya seputar wisata Indonesia..."
+          autocomplete="off"
+        />
+        <button type="submit" id="send-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
