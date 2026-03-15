@@ -19,10 +19,10 @@ Chatbot berbasis AI untuk membantu pengguna merencanakan perjalanan wisata di In
 
 | Parameter | Nilai | Alasan |
 |---|---|---|
-| `temperature` | `0.9` | Respons lebih kreatif & ekspresif — cocok untuk travel bot |
+| `temperature` | `0.7` | Respons lebih kreatif & ekspresif — cocok untuk travel bot |
 | `topP` | `0.95` | Variasi jawaban lebih kaya dengan nucleus sampling |
 | `topK` | `40` | Batasi ke 40 token terbaik untuk kualitas output |
-| `maxOutputTokens` | `1024` | Cukup untuk jawaban detail tentang destinasi wisata |
+| `maxOutputTokens` | `8192` | Cukup untuk jawaban detail tentang destinasi wisata |
 
 ---
 
